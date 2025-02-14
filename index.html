@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>¿Quieres ser mi San Valentín?</h1>
+        <!-- Contenedor para ingresar el código -->
+        <div id="codeContainer">
+            <input type="text" id="codeInput" placeholder="Ingresa el código" maxlength="8">
+            <button id="submitCode">Enviar</button>
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+        <!-- Contenedor de los botones (oculto inicialmente) -->
+        <div id="buttonsContainer" class="hidden">
+            <div class="buttons">
+                <button id="btnSi">¡Sí!</button>
+                <button id="btnNo">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ventana emergente redonda -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText">"Sabías que no importa si eliges 'sí' o 'no', porque para mí siempre has sido y siempre serás mi San Valentín.
+                 Cada día a tu lado es un regalo, y no necesito que sea 14 de febrero para recordar lo especial que eres para mí. Eres mi razón para sonreír, mi inspiración y mi mayor felicidad. Te amo hoy, mañana y siempre. 💖"</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

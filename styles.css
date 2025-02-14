@@ -1,0 +1,123 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background-image: url('fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para que el texto sea legible */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #e74c3c;
+    font-size: 2.5em;
+}
+
+#codeContainer input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#codeContainer button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+#btnSi {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#btnNo {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Estilos para la ventana emergente redonda */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffccd5; /* Rosa claro */
+    padding: 40px;
+    border-radius: 50%; /* Forma redonda */
+    text-align: center;
+    position: relative;
+    display: inline-flex; /* Para que el círculo se ajuste al contenido */
+    justify-content: center;
+    align-items: center;
+    color: #8b0000; /* Color de texto rojo oscuro */
+    font-size: 1.2em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    min-width: 150px; /* Tamaño mínimo */
+    min-height: 150px; /* Tamaño mínimo */
+    max-width: 90%; /* Límite máximo para que no se salga de la pantalla */
+    word-wrap: break-word; /* Asegura que el texto no desborde */
+}
+
+.modal-content p {
+    margin: 0;
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #8b0000;
+}
